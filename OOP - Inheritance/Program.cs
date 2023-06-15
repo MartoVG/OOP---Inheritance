@@ -6,7 +6,10 @@ namespace OOP___Inheritance
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Food food = new Food();
+
+            food.Position = new Position(2, 4);
+            
         }
     }
 }
