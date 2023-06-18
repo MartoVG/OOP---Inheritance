@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Random_List
 {
@@ -6,7 +7,15 @@ namespace Random_List
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            RandomList list = new RandomList();
+            list.Add("pesho");
+            list.Add("Oop");
+            list.Add("Tosho");
+            list.Add("Tanq");
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(list.RandomString());
+            }
         }
     }
 }
